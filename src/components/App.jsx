@@ -1,10 +1,13 @@
-import NavBar from "./TopBar/NavBar"
+import Footer from "./BottomPage/Bottom"
+import NavBar from "./TopPage/Top"
 
 
 const App = () => {
   return (
     <>
     <NavBar/>
+    <Footer/>
+    
     </>
   )
 }
