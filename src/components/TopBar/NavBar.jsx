@@ -1,4 +1,5 @@
 import { useState } from 'react';
+
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -23,12 +24,15 @@ const NavBar = () => {
             <span className="line line2"></span>
             <span className="line line3"></span>
           </div>
+          {/* TITULO */}
+          <div className='title'>Booksapp</div>
+          {/* ELEMENTOS DENTRO DEL MENU */}
           <ul className={`menu-items ${menuOpen ? 'active' : ''}`}>
             <li><a href="#">Ejemplo 1</a></li>
             <li><a href="#">Ejemplo 2</a></li>
             <li><a href="#">Ejemplo 3</a></li>
             <li><a href="#">Ejemplo 4</a></li>
-            <li><a href="#">Ejemplo 5</a></li>
+            <li><a href="#">Ejemplo 5 Ejemplo 6</a></li>
           </ul>
         </div>
       </div>

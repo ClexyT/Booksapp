@@ -1,18 +1,12 @@
-html{
-  background-color: rgb(59, 59, 59);
-}
-/* Title */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-body {
-  font-family: "Poppins", sans-serif;
+html{
+  background-color: rgb(59, 59, 59);
 }
-
+/* NAV BAR */
 .container {
   width: 100%;
   margin: auto;
@@ -110,8 +104,7 @@ body {
   transform: translate(-150%);
   display: flex;
   flex-direction: column;
-  margin-left: -40px;
-  padding-left: 50px;
+
   transition: transform 0.5s ease-in-out;
   text-align: center;
 }
@@ -137,3 +130,27 @@ body {
 .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
   transform: rotate(-45deg);
 }
+  /* Title */
+.title{
+  position:absolute;  
+  display:flex;
+  left: 80px;
+  top:15%;
+  font-size: 30px;
+  color: white;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+/* Responsive */
+@media (max-width: 425px) {
+  .navbar .menu-items {
+    width: 100%;
+    margin:0;
+  }
+  .nav-container input[type="checkbox"]:checked ~ .title{
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
