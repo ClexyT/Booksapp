@@ -1,11 +1,15 @@
 import Footer from "./BottomPage/Bottom"
-import NavBar from "./TopPage/Top"
+import Books from "./MidPage/Books"
+import Mid from "./MidPage/Mid"
+import Top from "./TopPage/Top"
 
 
 const App = () => {
   return (
     <>
-    <NavBar/>
+    <Top/>
+    <Mid/>
+    <Books/>
     <Footer/>
     
     </>

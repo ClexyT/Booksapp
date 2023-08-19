@@ -5,6 +5,7 @@
 }
 html{
   background-color: rgb(59, 59, 59);
+  color:white;
 }
 /* NAV BAR */
 .container {
@@ -33,7 +34,7 @@ html{
 
 .navbar .nav-container a {
   text-decoration: none;
-  color: #0e2431;
+  color:white;
   font-weight: 500;
   font-size: 1.2rem;
   padding: 0.7rem;
@@ -79,7 +80,7 @@ html{
   height: 4px;
   width: 100%;
   border-radius: 10px;
-  background: #0e2431;
+  background: #64c6ff;
 }
 
 .nav-container .hamburger-lines .line1 {
@@ -97,14 +98,14 @@ html{
 }
 
 .navbar .menu-items {
-  padding-top: 100px;
-  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+  padding-top: 100px;  
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 19px 58px, rgba(0, 0, 0, 0.22) 0px 15px 52px;
   height: 100vh;
   width: 35%;
   transform: translate(-150%);
   display: flex;
   flex-direction: column;
-
+  backdrop-filter: blur(8px);
   transition: transform 0.5s ease-in-out;
   text-align: center;
 }
@@ -132,10 +133,11 @@ html{
 }
   /* Title */
 .title{
+  font-family:'Aclonica';
   position:absolute;  
   display:flex;
   left: 80px;
-  top:15%;
+  top:16px;
   font-size: 30px;
   color: white;
   visibility: visible;
@@ -144,16 +146,17 @@ html{
 }
 .volume-container {
   width: 300px;
-  height: 30px;
+  height: 10px;
   background-color: #eee;
   position: relative;
   border-radius: 15px;
   margin-top: 50px;
+  margin-left: 10%;
 }
 
 .volume-slider {
   width: 100%;
-  height: 100%;
+  height: 0%;
   background-color: #3498db;
   border-radius: 15px;
   position: relative;
