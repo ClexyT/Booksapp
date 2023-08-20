@@ -136,47 +136,6 @@ html{
 .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
   transform: rotate(-45deg);
 }
-  /* Title */
-.title{
-  position:absolute;  
-  display:flex;
-  left: 80px;
-  top:6px;
-  font-size: 30px;
-  color: white;
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
-}
-.volume-container {
-  width: 300px;
-  height: 10px;
-  background-color: #eee;
-  position: relative;
-  border-radius: 15px;
-  margin-top: 50px;
-  margin-left: 10%;
-}
-
-.volume-slider {
-  width: 100%;
-  height: 0%;
-  background-color: #3498db;
-  border-radius: 15px;
-  position: relative;
-  cursor: pointer;
-}
-
-.volume-ball {
-  width: 20px;
-  height: 20px;
-  background-color: #e74c3c;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-}
 
 /* Responsive */
 @media (max-width: 425px) {
