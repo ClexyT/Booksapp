@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import Slider from './slider';
-
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -29,7 +27,7 @@ const NavBar = () => {
           <div className='title'>Booksapp</div>
           {/* ELEMENTOS DENTRO DEL MENU */}
           <ul className={`menu-items ${menuOpen ? 'active' : ''}`}>
-            <Slider/>
+            <li><input type="range"></input></li>
             <li><a href="#">Ejemplo 2</a></li>
             <li><a href="#">Ejemplo 3</a></li>
             <li><a href="#">Ejemplo 4</a></li>
