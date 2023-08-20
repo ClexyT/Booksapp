@@ -1,18 +1,21 @@
-import PropTypes from 'prop-types'
-import jsonBooks from '../../mocks/books.json'
-import useSelectedBooks from '../../hooks/useSelectedBooks'
-
+import PropTypes from 'prop-types';
+import jsonBooks from '../../mocks/books.json';
+import useSelectedBooks from '../../hooks/useSelectedBooks';
+import { useEffect } from 'react';
 const Books = ({ filteredBooks }) => {
-  const books = jsonBooks.library
-  const savedBooks = JSON.parse(localStorage.getItem('addedBook')) || []
+  const books = jsonBooks.library;
+  const savedBooks = JSON.parse(localStorage.getItem('addedBook')) || [];
   const initialBookStates = books.map((item) => ({
     id: item.book.ISBN,
-    add: savedBooks.includes(item.book.ISBN)
-  }))
-  const { selectedBooks, toggleAdd, getSelectedBooks } = useSelectedBooks(initialBookStates)
-  const addedBook = getSelectedBooks(books)
-  console.log(addedBook)
-  console.log(filteredBooks)
+    add: savedBooks.includes(item.book.ISBN),
+  }));
+  const { selectedBooks, toggleAdd, getSelectedBooks } = useSelectedBooks(initialBookStates);
+
+  useEffect(() => {
+    
+    localStorage.setItem('addedBook', JSON.stringify(selectedBooks));
+}, [selectedBooks, getSelectedBooks]);
+
 
   return (
     <div className='book-container'>
@@ -20,8 +23,9 @@ const Books = ({ filteredBooks }) => {
         {filteredBooks.map((item) => (
           <li key={item.book.title}>
             <img src={item.book.cover} alt={`Portada de ${item.book.title}`} />
-            <p className='#'>Titulo: <span className='#'>{item.book.title}</span></p>
-            <p className='#'>Autor: <span className='#'>{item.book.author.name}</span></p>
+            <p className='#'><span className='#'>{item.book.title}</span></p>
+            <img src="../../../public/info_FILL0_wght400_GRAD0_opsz48.svg " className=''    ></img>
+            {/* <p className='#'>Autor: <span className='#'>{item.book.author.name}</span></p> */}
             <button
               className={`p-1 pr-2 mt-2 mb-0 rounded-r-lg font-bold ${
                 selectedBooks.find((bookState) => bookState.id === item.book.ISBN)?.add
@@ -33,10 +37,12 @@ const Books = ({ filteredBooks }) => {
               {selectedBooks.find((bookState) => bookState.id === item.book.ISBN)?.add
                 ? 'Eliminar'
                 : 'Añadir'}
+
             </button>
           </li>
         ))}
       </ul>
+
     </div>
   )
 }

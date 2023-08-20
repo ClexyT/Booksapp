@@ -6,7 +6,7 @@ const NavBar = () => {
   const handleMenuToggle = () => {
     setMenuOpen(!menuOpen)
   }
-
+  
   return (
     <nav>
       <div className='navbar'>
@@ -31,7 +31,7 @@ const NavBar = () => {
 
           {/* ELEMENTOS DENTRO DEL MENU */}
           <ul className={`menu-items ${menuOpen ? 'active' : ''}`}>
-            <li><input type='range' /></li>
+          
             <li><a href='#'>Ejemplo 2</a></li>
             <li><a href='#'>Ejemplo 3</a></li>
             <li><a href='#'>Ejemplo 4</a></li>
