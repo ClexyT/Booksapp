@@ -23,8 +23,9 @@ const Books = ({ filteredBooks }) => {
         {filteredBooks.map((item) => (
           <li key={item.book.title}>
             <img src={item.book.cover} alt={`Portada de ${item.book.title}`} />
-            <p className='#'>Titulo: <span className='#'>{item.book.title}</span></p>
-            <p className='#'>Autor: <span className='#'>{item.book.author.name}</span></p>
+            <p className='#'><span className='#'>{item.book.title}</span></p>
+            <img src="../../../public/info_FILL0_wght400_GRAD0_opsz48.svg " className=''    ></img>
+            {/* <p className='#'>Autor: <span className='#'>{item.book.author.name}</span></p> */}
             <button
               className={`p-1 pr-2 mt-2 mb-0 rounded-r-lg font-bold ${
                 selectedBooks.find((bookState) => bookState.id === item.book.ISBN)?.add
