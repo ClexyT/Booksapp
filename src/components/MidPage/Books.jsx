@@ -4,7 +4,7 @@ import useSelectedBooks from "../../hooks/useSelectedBooks";
 
 const Books = () => {
   let books = jsonBooks.library;
-  const savedBooks = JSON.stringify(localStorage.getItem("addedBook")) || [];
+  const savedBooks = JSON.parse(localStorage.getItem("addedBook")) || [];
   const initialBookStates = jsonBooks.library.map((item) => ({
     id: item.book.ISBN,
     add: savedBooks.includes(item.book.ISBN),
