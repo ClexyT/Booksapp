@@ -11,7 +11,7 @@ const App = () => {
   return (
     <>
       <Top />
-      <Mid />
+      <Mid filteredBooks={filteredBooks} />
       <Filters  selectedGenre={selectedGenre} books={books} selectGenre={selectGenre} clearGenreSelection={clearGenreSelection}/>
       <Books filteredBooks={filteredBooks} />  {/* Pasar los libros filtrados como prop */}
       <Footer />
