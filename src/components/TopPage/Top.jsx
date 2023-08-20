@@ -1,11 +1,12 @@
 import { useState } from 'react';
+import { SelectedBooks } from '../MidPage/Books';
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleMenuToggle = () => {
     setMenuOpen(!menuOpen);
   };
-
+  
   return (
     <nav>
       <div className="navbar">
@@ -30,11 +31,9 @@ const NavBar = () => {
 
           {/* ELEMENTOS DENTRO DEL MENU */}
           <ul className={`menu-items ${menuOpen ? 'active' : ''}`}>
-            <li><input type="range"></input></li>
-            <li><a href="#">Ejemplo 2</a></li>
-            <li><a href="#">Ejemplo 3</a></li>
-            <li><a href="#">Ejemplo 4</a></li>
-            <li><a href="#">Ejemplo 5 Ejemplo 6</a></li>
+            {SelectedBooks.map((book) => (
+              <li key={book.id}>{book.id}</li>
+            ))}
           </ul>
         </div>
       </div>
