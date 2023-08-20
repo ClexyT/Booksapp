@@ -24,7 +24,10 @@ const NavBar = () => {
             <span className="line line3"></span>
           </div>
           {/* TITULO */}
-          <div className='title'>Booksapp</div>
+          <div className="flex items-center justify-center">
+            <h1 className="text-3xl md:text-5xl">Booksapp</h1>
+          </div>
+
           {/* ELEMENTOS DENTRO DEL MENU */}
           <ul className={`menu-items ${menuOpen ? 'active' : ''}`}>
             <li><input type="range"></input></li>
