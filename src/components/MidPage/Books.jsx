@@ -4,7 +4,7 @@ const Books = () => {
   return (
 <>
     <div className='book-container'>
-        <ul className='grid-container'>
+        <ul className='grid-container mt-12'>
         {books.map(item=>(
             <li key={item.book.title}>
               <img src={item.book.cover} alt={`Portada de ${item.book.title}`}></img>
