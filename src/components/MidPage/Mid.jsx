@@ -6,7 +6,7 @@ const Mid = () => {
   return (
     <>
       <h3 className='text-4xl text-center gap-1'>
-        <span className='text-amber-300'>{books.length}</span> Books available
+        <span className='text-amber-300'>{books.length}</span> Libros disponibles
       </h3>
     </>
   );

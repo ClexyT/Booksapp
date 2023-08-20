@@ -12,9 +12,9 @@ export function Filters() {
   };
 
   return (
-    <section className='flex items-center justify-center font-2xl font-bold right-0.5 text-white space-x-96 form'>
-      <div className='flex gap-2'>
-        <label className='text-2xl'>Number of pages:</label>
+    <section className='flex items-center justify-center font-2xl font-bold right-0.5 text-white space-x-24 mt-2 form'>
+      <div className='flex gap-1'>
+        <label className='text-1xl'>Numero de páginas: </label>
         <input
           type='range'
           min='0'
@@ -27,20 +27,20 @@ export function Filters() {
       </div>
 
       <div className='label-input'>
-        <label className='justify-items-end'>Filter by genre</label>
+        <label className='justify-items-end'>Filtrar por genero:</label>
         <select
-          className='text-black'
+          className='text-black cursor-pointer'
           value={selectedGenre || ''}
           onChange={(e) => selectGenre(e.target.value)}
         >
-          <option value=''>All</option>
-          <option value='Fantasía'>Fantasy</option>
-          <option value='Ciencia ficción'>Fiction</option>
+          <option value=''>Todos</option>
+          <option value='Fantasía'>Fantasia</option>
+          <option value='Ciencia ficción'>Ciencia Ficcion</option>
           <option value='Zombies'>Zombies</option>
           <option value='Terror'>Terror</option>
           <option value='Novela'>Novela</option>
         </select>
-        <button onClick={() => clearGenreSelection()}>Clear Genre</button>
+        <button className="hover:underline"onClick={() => clearGenreSelection()}>Limpiar</button>
       </div>
     </section>
   );

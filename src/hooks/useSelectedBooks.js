@@ -13,6 +13,9 @@ const useSelectedBooks = (initialBookStates) => {
         book.id === id ? { ...book, add: !book.add } : book
       )
     );
+
+    // Actualiza el localStorage con los libros seleccionados
+    localStorage.setItem("addedBook", JSON.stringify(selectedBooks));
   };
 
   const getSelectedBooks = (allBooks) =>

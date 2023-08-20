@@ -206,11 +206,7 @@ select {
   color: #ffffff !important;
   font-size: 1rem;
   border-color: #181818;
-  /* para definir el color de los bordes cuando se hace click */
-  
-  /* hacer que el outline sea un subrayado y de color blanco */
-  
-
-
-  /* border-radius:10px; */
+  text-align:center;
+  margin: 10px;
+  border-radius:10px;
 }
