@@ -188,3 +188,20 @@ img {
   margin: 0;
 }
 
+select {
+  /* para que se ajuste al ancho del contenedor */
+  width: auto;
+  /* para que se ajuste al alto del contenedor */
+  height: 100%;
+  background-color: #242424;
+  color: #ffffff !important;
+  font-size: 1rem;
+  border-color: #181818;
+  /* para definir el color de los bordes cuando se hace click */
+  
+  /* hacer que el outline sea un subrayado y de color blanco */
+  
+
+
+  /* border-radius:10px; */
+}
