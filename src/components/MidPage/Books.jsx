@@ -1,24 +1,23 @@
-
+import PropTypes from 'prop-types'; 
 import jsonBooks from "../../mocks/books.json";
 import useSelectedBooks from "../../hooks/useSelectedBooks";
 
-const Books = () => {
+const Books = ({ filteredBooks }) => {
   let books = jsonBooks.library;
   const savedBooks = JSON.parse(localStorage.getItem("addedBook")) || [];
-  const initialBookStates = jsonBooks.library.map((item) => ({
+  const initialBookStates = books.map((item) => ({
     id: item.book.ISBN,
     add: savedBooks.includes(item.book.ISBN),
   }));
   const { selectedBooks, toggleAdd, getSelectedBooks } = useSelectedBooks(initialBookStates);
-
   let addedBook = getSelectedBooks(books);
-  console.log("😎❤");
-  console.log(addedBook);
+  console.log(addedBook)
+  console.log(filteredBooks)
 
   return (
     <div className="book-container">
       <ul className="grid-container mt-12">
-        {books.map((item) => (
+        {filteredBooks.map((item) => (
           <li key={item.book.title}>
             <img src={item.book.cover} alt={`Portada de ${item.book.title}`} />
             <p className="#">Titulo: <span className="#">{item.book.title}</span></p>
@@ -41,5 +40,7 @@ const Books = () => {
     </div>
   );
 };
-
+Books.propTypes = {
+  filteredBooks: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
 export default Books;

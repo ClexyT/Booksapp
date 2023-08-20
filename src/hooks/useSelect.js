@@ -3,7 +3,7 @@ import books from '../mocks/books.json';
 
 export const useSelect = () => {
   const [selectedGenre, setSelectedGenre] = useState(null);
-
+  
   // funcion para filtrar libros por genero
   const filterBooksByGenre = (genre) => {
     if (!genre) {
@@ -21,9 +21,8 @@ export const useSelect = () => {
   const clearGenreSelection = () => {
     setSelectedGenre(null);
   };
-  console.log('selectedGenre:', selectedGenre);
-  console.log('books:', filterBooksByGenre(selectedGenre));
-
+  console.log('Filtro en el hook:', selectedGenre); // Agrega este console.log
+  console.log('Libro filtrado en el hook:', filterBooksByGenre(selectedGenre)); // Agrega este console.log
   return {
     selectedGenre,
     books: filterBooksByGenre(selectedGenre),

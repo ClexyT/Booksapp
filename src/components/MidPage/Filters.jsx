@@ -10,6 +10,8 @@ export function Filters() {
   const handlePageChange = (e) => {
     setData(e.target.value);
   };
+  console.log('Filtro en Filters:', selectedGenre); // Agrega este console.log
+  console.log('Libros filtrados en Filters:', books); // Agrega este console.log
 
   return (
     <section className='flex items-center justify-center font-2xl font-bold right-0.5 text-white space-x-24 mt-2 form'>
