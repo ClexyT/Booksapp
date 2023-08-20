@@ -21,8 +21,8 @@ export const useSelect = () => {
   const clearGenreSelection = () => {
     setSelectedGenre(null)
   }
-  console.log('Filtro en el hook:', selectedGenre) // Agrega este console.log
-  console.log('Libro filtrado en el hook:', filterBooksByGenre(selectedGenre)) // Agrega este console.log
+  console.log('Filtro en el hook:', selectedGenre)
+  console.log('Libro filtrado en el hook:', filterBooksByGenre(selectedGenre))
   return {
     selectedGenre,
     books: filterBooksByGenre(selectedGenre),
