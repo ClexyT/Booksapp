@@ -1,10 +1,15 @@
+import { useSelect } from '../../hooks/useSelect.js';
 
 const Mid = () => {
+  const { books } = useSelect(); 
+
   return (
-<>
- <h3 className='text-4xl text-center gap-1'><span className="text-amber-300">13</span> Books available</h3>
-</>
-  )
+    <>
+      <h3 className='text-4xl text-center gap-1'>
+        <span className='text-amber-300'>{books.length}</span> Books available
+      </h3>
+    </>
+  );
 }
 
-export default Mid
+export default Mid;

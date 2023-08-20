@@ -1,20 +1,13 @@
-import { useState } from "react";
 import jsonBooks from "../../mocks/books.json";
+import useSelectedBooks from "../../hooks/useSelectedBooks";
 
 const Books = () => {
   let books = jsonBooks.library;
+  const initialBookStates = jsonBooks.library.map((item) => ({ id: item.book.ISBN, add: false }));
+  const { selectedBooks, toggleAdd, getSelectedBooks } = useSelectedBooks(initialBookStates);
 
-  // Crear un estado para el seguimiento de cada libro
-  const [bookStates, setBookStates] = useState(
-    books.map((item) => ({ id: item.book.ISBN, add: false }))
-  );
-
-  const toggleAdd = (id) => {
-    const newBookStates = bookStates.map((bookState) =>
-      bookState.id === id ? { ...bookState, add: !bookState.add } : bookState
-    );
-    setBookStates(newBookStates);
-  };
+  let addedBook = getSelectedBooks(books)
+  console.log(addedBook);
 
   return (
     <>
@@ -27,13 +20,13 @@ const Books = () => {
               <p className="#">Autor: <span className="#">{item.book.author.name}</span></p>
               <button
                 className={`p-1 pr-2 mt-2 mb-0 rounded-r-lg ${
-                  bookStates.find((bookState) => bookState.id === item.book.ISBN)?.add
+                  selectedBooks.find((bookState) => bookState.id === item.book.ISBN)?.add
                     ? "bg-red-700"
                     : "bg-green-500"
                 }`}
                 onClick={() => toggleAdd(item.book.ISBN)}
               >
-                {bookStates.find((bookState) => bookState.id === item.book.ISBN)?.add
+                {selectedBooks.find((bookState) => bookState.id === item.book.ISBN)?.add
                   ? "Eliminar"
                   : "Añadir"}
               </button>
@@ -45,5 +38,4 @@ const Books = () => {
   );
 };
 
-export const SelectedBooks = (books) => books.filter((book) => book.add);
 export default Books;
