@@ -6,13 +6,13 @@ import { Filters } from './MidPage/Filters'
 import { useSelect } from '../hooks/useSelect' // Importar useSelect aquí
 
 const App = () => {
-  const { books: filteredBooks } = useSelect() // Obtener los libros filtrados del hook useSelect
+  const { books: filteredBooks, selectedGenre, books, selectGenre, clearGenreSelection } = useSelect() // Obtener los libros filtrados del hook useSelect
 
   return (
     <>
       <Top />
       <Mid />
-      <Filters />
+      <Filters  selectedGenre={selectedGenre} books={books} selectGenre={selectGenre} clearGenreSelection={clearGenreSelection}/>
       <Books filteredBooks={filteredBooks} />  {/* Pasar los libros filtrados como prop */}
       <Footer />
     </>
