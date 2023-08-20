@@ -1,17 +1,17 @@
-import { useState } from 'react';
-import { useSelect } from '../../hooks/useSelect.js'; 
+import { useState } from 'react'
+import { useSelect } from '../../hooks/useSelect.js'
 
-export function Filters() {
-  const { selectedGenre,  books, selectGenre, clearGenreSelection } = useSelect();
+export function Filters () {
+  const { selectedGenre, books, selectGenre, clearGenreSelection } = useSelect()
 
-  const [data, setData] = useState(0);
+  const [data, setData] = useState(0)
 
   // manejar cambios en el rango de paginas
   const handlePageChange = (e) => {
-    setData(e.target.value);
-  };
-  console.log('Filtro en Filters:', selectedGenre); // Agrega este console.log
-  console.log('Libros filtrados en Filters:', books); // Agrega este console.log
+    setData(e.target.value)
+  }
+  console.log('Filtro en Filters:', selectedGenre)
+  console.log('Libros filtrados en Filters:', books)
 
   return (
     <section className='flex items-center justify-center font-2xl font-bold right-0.5 text-white space-x-24 mt-2 form'>
@@ -42,8 +42,8 @@ export function Filters() {
           <option value='Terror'>Terror</option>
           <option value='Novela'>Novela</option>
         </select>
-        <button className="hover:underline"onClick={() => clearGenreSelection()}>Limpiar</button>
+        <button className='hover:underline' onClick={() => clearGenreSelection()}>Limpiar</button>
       </div>
     </section>
-  );
+  )
 }
