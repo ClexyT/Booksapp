@@ -193,7 +193,7 @@ html{
 img {
   border-radius: 8px;
   width: 300px;
-  box-shadow: 0px 0px 30px #000;
+
 }
 
 .grid-container {
@@ -203,6 +203,7 @@ img {
   justify-items: center;
   /* margin-top: 12px; */
 }
+
 .grid-container > li {
   background-color: #181818;
   padding: 1rem;
@@ -211,6 +212,14 @@ img {
   margin-bottom: 1rem;
   margin-right: 1rem;
 }
+
+li:hover {
+  opacity: 1;
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 30px #000;
+}
+
 
 .grid-container > li:last-child {
   margin-right: 0;
@@ -227,5 +236,24 @@ img {
   font-size: 1rem;
   font-weight: bold;
   margin: 0;
+}
+
+.label-input select {
+  width: 15vh;
+  font-size: 1rem;
+}
+
+.form {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.label-input label {
+    font-size: 1.5rem;
+}
+
+.label-input select {
+  
+    width: 20vh;
 }
 

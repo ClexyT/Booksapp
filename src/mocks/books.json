@@ -19,217 +19,398 @@
             }
         },
         {
-          "book": {
-              "title": "Juego de Tronos",
-              "pages": 694,
-              "genre": "Fantasía",
-              "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1273763400i/8189620.jpg",
-              "synopsis": "En un reino donde las estaciones duran años, una batalla épica por el trono se desarrolla.",
-              "year": 1996,
-              "ISBN": "978-0553103540",
-              "author": {
-                  "name": "George R. R. Martin",
-                  "otherBooks": [
-                      "Choque de Reyes",
-                      "Tormenta de Espadas",
-                      "Festín de Cuervos"
-                  ]
-              }
-          }
-      },
-      {
-        "book": {
-            "title": "Harry Potter y la piedra filosofal",
-            "pages": 223,
-            "genre": "Fantasía",
-            "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1550337333i/15868.jpg",
-            "synopsis": "Un niño descubre que es un mago y comienza una aventura en una escuela de magia.",
-            "year": 1997,
-            "ISBN": "978-0747532699",
-            "author": {
-                "name": "J.K. Rowling",
-                "otherBooks": [
-                    "Harry Potter y la cámara secreta",
-                    "Harry Potter y el prisionero de Azkaban",
-                    "Harry Potter y el cáliz de fuego"
-                ]
+            "book": {
+                "title": "Juego de Tronos",
+                "pages": 694,
+                "genre": "Fantasía",
+                "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1273763400i/8189620.jpg",
+                "synopsis": "En un reino donde las estaciones duran años, una batalla épica por el trono se desarrolla.",
+                "year": 1996,
+                "ISBN": "978-0553103540",
+                "author": {
+                    "name": "George R. R. Martin",
+                    "otherBooks": [
+                        "Choque de Reyes",
+                        "Tormenta de Espadas",
+                        "Festín de Cuervos"
+                    ]
+                }
+            }
+        },
+        {
+            "book": {
+                "title": "Harry Potter y la piedra filosofal",
+                "pages": 223,
+                "genre": "Fantasía",
+                "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1550337333i/15868.jpg",
+                "synopsis": "Un niño descubre que es un mago y comienza una aventura en una escuela de magia.",
+                "year": 1997,
+                "ISBN": "978-0747532699",
+                "author": {
+                    "name": "J.K. Rowling",
+                    "otherBooks": [
+                        "Harry Potter y la cámara secreta",
+                        "Harry Potter y el prisionero de Azkaban",
+                        "Harry Potter y el cáliz de fuego"
+                    ]
+                }
+            }
+        },
+        {
+            "book": {
+                "title": "1984",
+                "pages": 328,
+                "genre": "Ciencia ficción",
+                "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1657781256i/61439040.jpg",
+                "synopsis": "Una inquietante visión de un futuro distópico y totalitario.",
+                "year": 1949,
+                "ISBN": "978-0451524935",
+                "author": {
+                    "name": "George Orwell",
+                    "otherBooks": [
+                        "Rebelión en la granja"
+                    ]
+                }
+            }
+        },
+        {
+            "book": {
+                "title": "Apocalipsis Zombie",
+                "pages": 444,
+                "genre": "Zombies",
+                "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1422626176i/24762432.jpg",
+                "synopsis": "Un gallego se queda en casa en pleno apocalipsis zombie y acaba casi salvando el mundo",
+                "year": 2001,
+                "ISBN": "978-4444532611",
+                "author": {
+                    "name": "Manel Loreiro",
+                    "otherBooks": []
+                }
+            }
+        },
+        {
+            "book": {
+                "title": "Dune",
+                "pages": 412,
+                "genre": "Ciencia ficción",
+                "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1555447414i/44767458.jpg",
+                "synopsis": "En el inhóspito planeta desértico de Arrakis, una gran intriga política y familiar se desarrolla.",
+                "year": 1965,
+                "ISBN": "978-0441172719",
+                "author": {
+                    "name": "Frank Herbert",
+                    "otherBooks": [
+                        "El mesías de Dune",
+                        "Hijos de Dune"
+                    ]
+                }
+            }
+        },
+        {
+            "book": {
+                "title": "La Guía del Autoestopista Galáctico",
+                "pages": 216,
+                "genre": "Ciencia ficción",
+                "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1653311117i/6691227.jpg",
+                "synopsis": "Un viaje absurdo y cómico por el espacio, con toallas.",
+                "year": 1979,
+                "ISBN": "978-0345391803",
+                "author": {
+                    "name": "Douglas Adams",
+                    "otherBooks": [
+                        "El restaurante del fin del mundo",
+                        "La vida, el universo y todo lo demás"
+                    ]
+                }
+            }
+        },
+        {
+            "book": {
+                "title": "Neuromante",
+                "pages": 271,
+                "genre": "Ciencia ficción",
+                "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1554437249i/6088007.jpg",
+                "synopsis": "Una visión profética de la ciber-realidad y la inteligencia artificial.",
+                "year": 1984,
+                "ISBN": "978-0441569595",
+                "author": {
+                    "name": "William Gibson",
+                    "otherBooks": [
+                        "Conde Cero",
+                        "Mona Lisa Acelerada"
+                    ]
+                }
+            }
+        },
+        {
+            "book": {
+                "title": "Fahrenheit 451",
+                "pages": 249,
+                "genre": "Ciencia ficción",
+                "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1383718290i/13079982.jpg",
+                "synopsis": "Una sociedad futura donde los libros están prohibidos y 'bomberos' queman cualquier libro que encuentren.",
+                "year": 1953,
+                "ISBN": "978-1451673319",
+                "author": {
+                    "name": "Ray Bradbury",
+                    "otherBooks": [
+                        "Crónicas marcianas",
+                        "El hombre ilustrado"
+                    ]
+                }
+            }
+        },
+        {
+            "book": {
+                "title": "El resplandor",
+                "pages": 688,
+                "genre": "Terror",
+                "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1641398308i/60038757.jpg",
+                "synopsis": "Una familia se muda a un hotel aislado para el invierno donde una presencia siniestra influye en el padre hacia la violencia.",
+                "year": 1977,
+                "ISBN": "978-0307743657",
+                "author": {
+                    "name": "Stephen King",
+                    "otherBooks": [
+                        "Carrie",
+                        "It"
+                    ]
+                }
+            }
+        },
+        {
+            "book": {
+                "title": "Drácula",
+                "pages": 418,
+                "genre": "Terror",
+                "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1387151694i/17245.jpg",
+                "synopsis": "La historia del infame conde Drácula y su intento de mudarse de Transilvania a Inglaterra.",
+                "year": 1897,
+                "ISBN": "978-0486411095",
+                "author": {
+                    "name": "Bram Stoker",
+                    "otherBooks": [
+                        "La joya de las siete estrellas",
+                        "La madriguera del gusano blanco"
+                    ]
+                }
+            }
+        },
+        {
+            "book": {
+                "title": "Frankenstein",
+                "pages": 280,
+                "genre": "Terror",
+                "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1669159060i/63631742.jpg",
+                "synopsis": "Un científico obsesionado crea una criatura viva a partir de partes de cuerpos robadas, con consecuencias desastrosas.",
+                "year": 1818,
+                "ISBN": "978-0486282114",
+                "author": {
+                    "name": "Mary Shelley",
+                    "otherBooks": [
+                        "El último hombre",
+                        "Valperga"
+                    ]
+                }
+            }
+        },
+        {
+            "book": {
+                "title": "La llamada de Cthulhu",
+                "pages": 43,
+                "genre": "Terror",
+                "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1485924654i/34094154.jpg",
+                "synopsis": "La historia de un monstruo ancestral que amenaza con revivir y dominar el mundo.",
+                "year": 1928,
+                "ISBN": "978-1542461690",
+                "author": {
+                    "name": "H.P. Lovecraft",
+                    "otherBooks": [
+                        "El horror de Dunwich",
+                        "En las montañas de la locura"
+                    ]
+                }
+            }
+        },
+        {
+            "book": {
+                "title": "La naranja mecánica",
+                "pages": 300,
+                "genre": "Misterio",
+                "cover": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1623078210-la-naranja-mecanica-anthony-burgess-201505261226.jpg?crop=1xw:1xh;center,top&resize=980:*",
+                "synopsis": "Descripción del nuevo libro 1.",
+                "year": 1962,
+                "ISBN": "978-1234567890",
+                "author": {
+                    "name": "Anthony Burgess",
+                    "otherBooks": [
+                        "Otro libro del Autor del Nuevo Libro 1",
+                        "Más libros del Autor del Nuevo Libro 1"
+                    ]
+                }
+            }
+        },
+        {
+            "book": {
+                "title": "La ola",
+                "pages": 350,
+                "genre": "Aventura",
+                "cover": "https://www.gandhi.com.mx/media/catalog/product/9/7/9788418733277_8f43.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=&width=&canvas=:",
+                "synopsis": "Descripción del nuevo libro 2.",
+                "year": 2021,
+                "ISBN": "978-9876543210",
+                "author": {
+                    "name": "Todd Strasser",
+                    "otherBooks": [
+                        "Otro libro del Autor del Nuevo Libro 2",
+                        "Más libros del Autor del Nuevo Libro 2"
+                    ]
+                }
+            }
+        },
+        {
+            "book": {
+                "title": "El destape nacional",
+                "pages": 400,
+                "genre": "Ciencia ficción",
+                "cover": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1623075596-41pjuon48tL._SL500_.jpg?crop=0.986xw:0.974xh;0,0.0260xh&resize=980:*",
+                "synopsis": "Descripción del nuevo libro 3.",
+                "year": 2004,
+                "ISBN": "978-0123456789",
+                "author": {
+                    "name": "J. M. Ponce",
+                    "otherBooks": [
+                        "Otro libro del Autor del Nuevo Libro 3",
+                        "Más libros del Autor del Nuevo Libro 3"
+                    ]
+                }
+            }
+        },
+        {
+            "book": {
+                "title": "Lectura fácil",
+                "pages": 250,
+                "genre": "Romance",
+                "cover": "data:image/png;base64,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",
+                "synopsis": "Descripción del nuevo libro 4.",
+                "year": 1603,
+                "ISBN": "978-9876543210",
+                "author": {
+                    "name": "Cristina Morales",
+                    "otherBooks": [
+                        "Otro libro del Autor del Nuevo Libro 4",
+                        "Más libros del Autor del Nuevo Libro 4"
+                    ]
+                }
+            }
+        },
+        {
+            "book": {
+                "title": "Snuff",
+                "pages": 280,
+                "genre": "Misterio",
+                "cover": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHK12D_iywzlB-Uus8WdEWKwwEIMyLot9f3Gvv0Y-DpFUTtyhP",
+                "synopsis": "Descripción del nuevo libro 5.",
+                "year": 2023,
+                "ISBN": "978-0123456789",
+                "author": {
+                    "name": "Chuck Palahniuk",
+                    "otherBooks": [
+                        "Otro libro del Autor del Nuevo Libro 5",
+                        "Más libros del Autor del Nuevo Libro 5"
+                    ]
+                }
+            }
+        },
+        {
+            "book": {
+                "title": "El niño en la nieve",
+                "pages": 320,
+                "genre": "Fantasía",
+                "cover": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1623080744-41CDgO39Q7L._SL500_.jpg?crop=1xw:1xh;center,top&resize=980:*",
+                "synopsis": "Descripción del nuevo libro 6.",
+                "year": 2023,
+                "ISBN": "978-9876543210",
+                "author": {
+                    "name": "Samuel Bjørk",
+                    "otherBooks": [
+                        "Otro libro del Autor del Nuevo Libro 6",
+                        "Más libros del Autor del Nuevo Libro 6"
+                    ]
+                }
+            }
+        },
+        {
+            "book": {
+                "title": "Nuevo Libro 7",
+                "pages": 380,
+                "genre": "Ciencia ficción",
+                "cover": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Fabritius-vink.jpg/220px-Fabritius-vink.jpg",
+                "synopsis": "Descripción del nuevo libro 7.",
+                "year": 2013,
+                "ISBN": "978-0123456789",
+                "author": {
+                    "name": "Donna Tartt",
+                    "otherBooks": [
+                        "Otro libro del Autor del Nuevo Libro 7",
+                        "Más libros del Autor del Nuevo Libro 7"
+                    ]
+                }
+            }
+        },
+        {
+            "book": {
+                "title": "El libro de las aguas",
+                "pages": 290,
+                "genre": "Aventura",
+                "cover": "https://m.media-amazon.com/images/I/41sWH9-MSOL._AC_UF894,1000_QL80_.jpg",
+                "synopsis": "Descripción del nuevo libro 8.",
+                "year": 2023,
+                "ISBN": "978-9876543210",
+                "author": {
+                    "name": "Eduard Limónov",
+                    "otherBooks": [
+                        "Otro libro del Autor del Nuevo Libro 8",
+                        "Más libros del Autor del Nuevo Libro 8"
+                    ]
+                }
+            }
+        },
+        {
+            "book": {
+                "title": "La metamorfosis",
+                "pages": 310,
+                "genre": "Romance",
+                "cover": "https://images.cdn1.buscalibre.com/fit-in/360x360/eb/46/eb462da7299989daa5722061c8b57473.jpg",
+                "synopsis": "Descripción del nuevo libro 9.",
+                "year": 2023,
+                "ISBN": "978-0123456789",
+                "author": {
+                    "name": "Franz Kafka",
+                    "otherBooks": [
+                        "Otro libro del Autor del Nuevo Libro 9",
+                        "Más libros del Autor del Nuevo Libro 9"
+                    ]
+                }
+            }
+        },
+        {
+            "book": {
+                "title": "Moby Dick",
+                "pages": 270,
+                "genre": "Fantasía",
+                "cover": "https://m.media-amazon.com/images/I/411a8Moy1mL.jpg",
+                "synopsis": "Descripción del nuevo libro 10.",
+                "year": 2023,
+                "ISBN": "978-9876543210",
+                "author": {
+                    "name": "Herman Melville",
+                    "otherBooks": [
+                        "Otro libro del Autor del Nuevo Libro 10",
+                        "Más libros del Autor del Nuevo Libro 10"
+                    ]
+                }
             }
         }
-    },
-    {
-      "book": {
-          "title": "1984",
-          "pages": 328,
-          "genre": "Ciencia ficción",
-          "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1657781256i/61439040.jpg",
-          "synopsis": "Una inquietante visión de un futuro distópico y totalitario.",
-          "year": 1949,
-          "ISBN": "978-0451524935",
-          "author": {
-              "name": "George Orwell",
-              "otherBooks": [
-                  "Rebelión en la granja"
-              ]
-          }
-      }
-  },
-    {
-      "book": {
-          "title": "Apocalipsis Zombie",
-          "pages": 444,
-          "genre": "Zombies",
-          "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1422626176i/24762432.jpg",
-          "synopsis": "Un gallego se queda en casa en pleno apocalipsis zombie y acaba casi salvando el mundo",
-          "year": 2001,
-          "ISBN": "978-4444532611",
-          "author": {
-              "name": "Manel Loreiro",
-              "otherBooks": []
-          }
-      }
-  },
-  {
-    "book": {
-        "title": "Dune",
-        "pages": 412,
-        "genre": "Ciencia ficción",
-        "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1555447414i/44767458.jpg",
-        "synopsis": "En el inhóspito planeta desértico de Arrakis, una gran intriga política y familiar se desarrolla.",
-        "year": 1965,
-        "ISBN": "978-0441172719",
-        "author": {
-            "name": "Frank Herbert",
-            "otherBooks": [
-                "El mesías de Dune",
-                "Hijos de Dune"
-            ]
-        }
-    }
-  },
-  {
-    "book": {
-        "title": "La Guía del Autoestopista Galáctico",
-        "pages": 216,
-        "genre": "Ciencia ficción",
-        "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1653311117i/6691227.jpg",
-        "synopsis": "Un viaje absurdo y cómico por el espacio, con toallas.",
-        "year": 1979,
-        "ISBN": "978-0345391803",
-        "author": {
-            "name": "Douglas Adams",
-            "otherBooks": [
-                "El restaurante del fin del mundo",
-                "La vida, el universo y todo lo demás"
-            ]
-        }
-    }
-  },
-  {
-    "book": {
-        "title": "Neuromante",
-        "pages": 271,
-        "genre": "Ciencia ficción",
-        "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1554437249i/6088007.jpg",
-        "synopsis": "Una visión profética de la ciber-realidad y la inteligencia artificial.",
-        "year": 1984,
-        "ISBN": "978-0441569595",
-        "author": {
-            "name": "William Gibson",
-            "otherBooks": [
-                "Conde Cero",
-                "Mona Lisa Acelerada"
-            ]
-        }
-    }
-  },
-  {
-    "book": {
-        "title": "Fahrenheit 451",
-        "pages": 249,
-        "genre": "Ciencia ficción",
-        "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1383718290i/13079982.jpg",
-        "synopsis": "Una sociedad futura donde los libros están prohibidos y 'bomberos' queman cualquier libro que encuentren.",
-        "year": 1953,
-        "ISBN": "978-1451673319",
-        "author": {
-            "name": "Ray Bradbury",
-            "otherBooks": [
-                "Crónicas marcianas",
-                "El hombre ilustrado"
-            ]
-        }
-    }
-  },
-    {
-      "book": {
-          "title": "El resplandor",
-          "pages": 688,
-          "genre": "Terror",
-          "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1641398308i/60038757.jpg",
-          "synopsis": "Una familia se muda a un hotel aislado para el invierno donde una presencia siniestra influye en el padre hacia la violencia.",
-          "year": 1977,
-          "ISBN": "978-0307743657",
-          "author": {
-              "name": "Stephen King",
-              "otherBooks": [
-                  "Carrie",
-                  "It"
-              ]
-          }
-      }
-  },
-  {
-      "book": {
-          "title": "Drácula",
-          "pages": 418,
-          "genre": "Terror",
-          "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1387151694i/17245.jpg",
-          "synopsis": "La historia del infame conde Drácula y su intento de mudarse de Transilvania a Inglaterra.",
-          "year": 1897,
-          "ISBN": "978-0486411095",
-          "author": {
-              "name": "Bram Stoker",
-              "otherBooks": [
-                  "La joya de las siete estrellas",
-                  "La madriguera del gusano blanco"
-              ]
-          }
-      }
-  },
-  {
-      "book": {
-          "title": "Frankenstein",
-          "pages": 280,
-          "genre": "Terror",
-          "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1669159060i/63631742.jpg",
-          "synopsis": "Un científico obsesionado crea una criatura viva a partir de partes de cuerpos robadas, con consecuencias desastrosas.",
-          "year": 1818,
-          "ISBN": "978-0486282114",
-          "author": {
-              "name": "Mary Shelley",
-              "otherBooks": [
-                  "El último hombre",
-                  "Valperga"
-              ]
-          }
-      }
-  },
-  {
-    "book": {
-        "title": "La llamada de Cthulhu",
-        "pages": 43,
-        "genre": "Terror",
-        "cover": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1485924654i/34094154.jpg",
-        "synopsis": "La historia de un monstruo ancestral que amenaza con revivir y dominar el mundo.",
-        "year": 1928,
-        "ISBN": "978-1542461690",
-        "author": {
-            "name": "H.P. Lovecraft",
-            "otherBooks": [
-                "El horror de Dunwich",
-                "En las montañas de la locura"
-            ]
-        }
-      }
-    }
-  ]}
+    ]
+}

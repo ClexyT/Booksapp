@@ -4,9 +4,9 @@ export function Filters () {
     const [data, setData] = useState(0)
 
     return (
-        <section className='flex items-center justify-center font-2xl font-bold right-0.5 text-white space-x-96'>
+        <section className='flex items-center justify-center font-2xl font-bold right-0.5 text-white space-x-96 form'>
             <div className='flex gap-2'>
-            <label>Number of pages:</label>
+            <label className='text-2xl'>Number of pages:</label>
                 <input 
                 type='range'
                 min='0'
@@ -15,10 +15,10 @@ export function Filters () {
                 value={data}
                 onChange={e => setData(e.target.value)}
                  />
-                 <span>{data}</span>
+                 <span className=''>{data}</span>
             </div>
-            <div>
-                <label className='justify-items-end'>filter by genre</label>
+            <div className='label-input'>
+                <label className='justify-items-end'>filter by genre </label>
                 <select className='text-black'>
                     <option value='Fantasía'>Fantasy</option>
                     <option value='Ciencia ficción'>Fiction</option>
