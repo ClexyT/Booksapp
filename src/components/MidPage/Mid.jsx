@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 const Mid = ({ filteredBooks }) => {
   const numFilteredBooks = filteredBooks.length;
 
@@ -7,7 +8,7 @@ const Mid = ({ filteredBooks }) => {
         <span className='text-amber-300'>{numFilteredBooks}</span> Libros disponibles
       </h3>
     </div>
-  )
-}
+  );
+};
 
 export default Mid;

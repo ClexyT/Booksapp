@@ -24,7 +24,7 @@ const Books = ({ filteredBooks }) => {
           <li key={item.book.title}>
             <img src={item.book.cover} alt={`Portada de ${item.book.title}`} />
             <p className='#'><span className='#'>{item.book.title}</span></p>
-            <img src="../../../public/info_FILL0_wght400_GRAD0_opsz48.svg " className=''    ></img>
+            <img src="../../../public/info_FILL0_wght400_GRAD0_opsz48.svg " className=''></img>
             {/* <p className='#'>Autor: <span className='#'>{item.book.author.name}</span></p> */}
             <button
               className={`p-1 pr-2 mt-2 mb-0 rounded-r-lg font-bold ${
