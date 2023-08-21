@@ -1,18 +1,20 @@
 import { useState } from 'react'
 
 // eslint-disable-next-line react/prop-types
-export function Filters ({ selectedGenre, books, selectGenre, clearGenreSelection }) {
+export function Filters ({ selectedGenre, books, selectGenre, clearGenreSelection}) {
   const [data, setData] = useState(0)
 
   // manejar cambios en el rango de paginas
   const handlePageChange = (e) => {
     setData(e.target.value)
   }
+  // let numberOfBooks = filteredBooks.length;
   console.log('Filtro en Filters:', selectedGenre)
   console.log('Libros filtrados en Filters:', books)
 
   return (
     <section className='flex items-center justify-center font-2xl font-bold right-0.5 text-white space-x-24 mt-2 form'>
+      {/* <p>{numberOfBooks}</p> */}
       <div className='flex gap-1'>
         <label className='text-1xl'>Numero de páginas: </label>
         <input

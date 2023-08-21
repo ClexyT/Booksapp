@@ -107,7 +107,7 @@ html{
   box-shadow: rgba(0, 0, 0, 0.7) 0px 19px 58px, rgba(0, 0, 0, 0.22) 0px 15px 52px;
   height: 100vh;
   width: 35%;
-  transform: translate(-150%);
+  transform: translate(-145%);
   display: flex;
   flex-direction: column;
   backdrop-filter: blur(8px);
