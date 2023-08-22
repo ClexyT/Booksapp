@@ -24,7 +24,13 @@ const Books = ({ filteredBooks }) => {
           <li key={item.book.title}>
             <img src={item.book.cover} alt={`Portada de ${item.book.title}`} />
             <p className='#'><span className='#'>{item.book.title}</span></p>
-            <img src="../../../public/info_FILL0_wght400_GRAD0_opsz48.svg " className=''    ></img>
+            <div className='group relative'> 
+            <img src="../../../public/info_FILL0_wght400_GRAD0_opsz48.svg" className='grid justify-items-end w-7 invert'></img> 
+            <div className='absolute top-0 left-0 w-full h-0 bg-gray-800 opacity-0 group-hover:h-full group-hover:opacity-75 transition-all duration-300'> 
+            <p className='text-white text-center mt-4'>Aquí puedes poner tu texto</p> 
+            </div> 
+            </div>
+            {/* <img src="../../../public/info_FILL0_wght400_GRAD0_opsz48.svg " className='grid  justify-items-end w-7 invert'></img> */}
             {/* <p className='#'>Autor: <span className='#'>{item.book.author.name}</span></p> */}
             <button
               className={`p-1 pr-2 mt-2 mb-0 rounded-r-lg font-bold ${
