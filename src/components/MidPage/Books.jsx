@@ -27,7 +27,7 @@ const Books = ({ filteredBooks }) => {
             <div className='group relative'> 
             <img src="../../../public/info_FILL0_wght400_GRAD0_opsz48.svg" className='grid justify-items-end w-7 invert'></img> 
             <div className='absolute top-0 left-0 w-full h-0 bg-gray-800 opacity-0 group-hover:h-full group-hover:opacity-75 transition-all duration-300'> 
-            <p className='text-white text-center mt-4'>Aquí puedes poner tu texto</p> 
+            <p className='text-white text-center mt-4'>{item.book.author.name}</p> 
             </div> 
             </div>
             {/* <img src="../../../public/info_FILL0_wght400_GRAD0_opsz48.svg " className='grid  justify-items-end w-7 invert'></img> */}

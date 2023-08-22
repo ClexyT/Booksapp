@@ -9,7 +9,7 @@
                 "synopsis": "Una aventura épica en un mundo de fantasía llamado la Tierra Media.",
                 "year": 1954,
                 "ISBN": "978-0618640157",
-                "author": {
+                "author": { 
                     "name": "J.R.R. Tolkien",
                     "otherBooks": [
                         "El Hobbit",
