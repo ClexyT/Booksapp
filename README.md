@@ -77,3 +77,4 @@ $ npm run dev
 - Twitter [@ClexyT_](https://twitter.com/ClexyT_?s=20)
 - GitHub [@vaancillo](https://github.com/vaancillo)
 - Twitter [@jaredmazapann](https://twitter.com/jaredmazapann)
+- GitHub [@zMiguezz](https://github.com/zMiguezz)

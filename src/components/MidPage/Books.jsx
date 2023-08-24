@@ -1,21 +1,19 @@
-import PropTypes from 'prop-types';
-import jsonBooks from '../../mocks/books.json';
-import useSelectedBooks from '../../hooks/useSelectedBooks';
-import { useEffect } from 'react';
+import PropTypes from 'prop-types'
+import jsonBooks from '../../mocks/books.json'
+import useSelectedBooks from '../../hooks/useSelectedBooks'
+import { useEffect } from 'react'
 const Books = ({ filteredBooks }) => {
-  const books = jsonBooks.library;
-  const savedBooks = JSON.parse(localStorage.getItem('addedBook')) || [];
+  const books = jsonBooks.library
+  const savedBooks = JSON.parse(localStorage.getItem('addedBook')) || []
   const initialBookStates = books.map((item) => ({
     id: item.book.ISBN,
-    add: savedBooks.includes(item.book.ISBN),
-  }));
-  const { selectedBooks, toggleAdd, getSelectedBooks } = useSelectedBooks(initialBookStates);
+    add: savedBooks.includes(item.book.ISBN)
+  }))
+  const { selectedBooks, toggleAdd, getSelectedBooks } = useSelectedBooks(initialBookStates)
 
   useEffect(() => {
-    
-    localStorage.setItem('addedBook', JSON.stringify(selectedBooks));
-}, [selectedBooks, getSelectedBooks]);
-
+    localStorage.setItem('addedBook', JSON.stringify(selectedBooks))
+  }, [selectedBooks, getSelectedBooks])
 
   return (
     <div className='book-container'>
@@ -49,7 +47,7 @@ const Books = ({ filteredBooks }) => {
             >
               {selectedBooks.find((bookState) => bookState.id === item.book.ISBN)?.add
                 ? 'Eliminar'
-                : 'Añadir'}   
+                : 'Añadir'}
 
             </button>
           </li>

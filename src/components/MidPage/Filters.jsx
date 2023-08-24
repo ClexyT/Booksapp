@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 // eslint-disable-next-line react/prop-types
-export function Filters ({ selectedGenre, books, selectGenre, clearGenreSelection}) {
+export function Filters ({ selectedGenre, books, selectGenre, clearGenreSelection }) {
   const [data, setData] = useState(0)
 
   // manejar cambios en el rango de paginas
