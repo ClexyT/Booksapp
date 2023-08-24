@@ -42,7 +42,7 @@ const Books = ({ filteredBooks }) => {
             >
               {selectedBooks.find((bookState) => bookState.id === item.book.ISBN)?.add
                 ? 'Eliminar'
-                : 'Añadir'}
+                : 'Añadir'}   
 
             </button>
           </li>
