@@ -1,21 +1,19 @@
-import PropTypes from 'prop-types';
-import jsonBooks from '../../mocks/books.json';
-import useSelectedBooks from '../../hooks/useSelectedBooks';
-import { useEffect } from 'react';
+import PropTypes from 'prop-types'
+import jsonBooks from '../../mocks/books.json'
+import useSelectedBooks from '../../hooks/useSelectedBooks'
+import { useEffect } from 'react'
 const Books = ({ filteredBooks }) => {
-  const books = jsonBooks.library;
-  const savedBooks = JSON.parse(localStorage.getItem('addedBook')) || [];
+  const books = jsonBooks.library
+  const savedBooks = JSON.parse(localStorage.getItem('addedBook')) || []
   const initialBookStates = books.map((item) => ({
     id: item.book.ISBN,
-    add: savedBooks.includes(item.book.ISBN),
-  }));
-  const { selectedBooks, toggleAdd, getSelectedBooks } = useSelectedBooks(initialBookStates);
+    add: savedBooks.includes(item.book.ISBN)
+  }))
+  const { selectedBooks, toggleAdd, getSelectedBooks } = useSelectedBooks(initialBookStates)
 
   useEffect(() => {
-    
-    localStorage.setItem('addedBook', JSON.stringify(selectedBooks));
-}, [selectedBooks, getSelectedBooks]);
-
+    localStorage.setItem('addedBook', JSON.stringify(selectedBooks))
+  }, [selectedBooks, getSelectedBooks])
 
   return (
     <div className='book-container'>
@@ -24,11 +22,11 @@ const Books = ({ filteredBooks }) => {
           <li key={item.book.title}>
             <img src={item.book.cover} alt={`Portada de ${item.book.title}`} />
             <p className='#'><span className='#'>{item.book.title}</span></p>
-            <div className='group relative'> 
-            <img src="../../../public/info_FILL0_wght400_GRAD0_opsz48.svg" className='grid justify-items-end w-7 invert'></img> 
-            <div className='absolute top-0 left-0 w-full h-0 bg-gray-800 opacity-0 group-hover:h-full group-hover:opacity-75 transition-all duration-300'> 
-            <p className='text-white text-center mt-4'>{item.book.author.name}</p> 
-            </div> 
+            <div className='group relative'>
+              <img src='../../../public/info_FILL0_wght400_GRAD0_opsz48.svg' className='grid justify-items-end w-7 invert' />
+              <div className='absolute top-0 left-0 w-full h-0 bg-gray-800 opacity-0 group-hover:h-full group-hover:opacity-75 transition-all duration-300'>
+                <p className='text-white text-center mt-4'>{item.book.author.name}</p>
+              </div>
             </div>
             {/* <img src="../../../public/info_FILL0_wght400_GRAD0_opsz48.svg " className='grid  justify-items-end w-7 invert'></img> */}
             {/* <p className='#'>Autor: <span className='#'>{item.book.author.name}</span></p> */}
@@ -42,7 +40,7 @@ const Books = ({ filteredBooks }) => {
             >
               {selectedBooks.find((bookState) => bookState.id === item.book.ISBN)?.add
                 ? 'Eliminar'
-                : 'Añadir'}   
+                : 'Añadir'}
 
             </button>
           </li>
