@@ -173,6 +173,7 @@ img {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
   margin-bottom: 1rem;
   margin-right: 1rem;
+  display: block;
 }
 
 img:hover {
@@ -212,4 +213,10 @@ select {
   text-align:center;
   margin: 10px;
   border-radius:10px;
+}
+.rdb:hover{
+  border-color: #85C4FF;
+  border-width: 1.5px;
+  border-radius:  10px;
+  border-spacing: 10px;
 }
