@@ -31,6 +31,7 @@ const Footer = () => {
           <a href='https://twitter.com/jaredmazapann' className={color}>
             <img src={twitter} alt='twitter-logo' className='w-6' />
           </a>
+          <img src={linkedin} alt='linkedin-logo' className='w-5' />
           <div className="bg-white w-0.5"></div>
           <p className='cursor-default'>Miguel Gonzalez</p>
           <a href='https://www.instagram.com/mxrenoo_/' className={color}>
@@ -42,6 +43,7 @@ const Footer = () => {
           <a href='https://twitter.com/zmiguezdev' className={color}>
             <img src={twitter} alt='twitter-logo' className='w-6' />
           </a>
+          <img src={linkedin} alt='linkedin-logo' className='w-5' />
         </div>
       </div>
       <div>
