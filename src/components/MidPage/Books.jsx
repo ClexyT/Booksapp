@@ -23,20 +23,21 @@ const Books = ({ filteredBooks }) => {
         {filteredBooks.map((item) => (
           <li key={item.book.title}>
            <div className='imagen-hover '><img  className='' src={item.book.cover} alt={`Portada de ${item.book.title}`} /></div> 
-           <div className="overlay">
-      <p>Texto de superposición</p></div>
-    
+          <div className="overlay">
+            {/* <p>Texto de superposición</p> */}
+          </div>
             <p className='#'><span className='#'>{item.book.title}</span></p>
             <div className='group relative'> 
             <img src="../../../public/info_FILL0_wght400_GRAD0_opsz48.svg" className='grid justify-items-end w-7 invert'></img> 
-            <div className='absolute top-0 left-0 w-full h-0 bg-gray-800 opacity-0 group-hover:h-full group-hover:opacity-75 transition-all duration-300'> 
+            <div className='absolute top-0 left-0 w-full h-0 bg-gray-800 opacity-0 group-hover:h-full group-hover:opacity-75 transition-all duration-300 '> 
             <p className='text-white text-center mt-4'>{item.book.author.name}
-            <div className="elemento">
-        Pasa el mouse aquí
-        <div className="div-hover">¡Hola, soy un div!</div>
-    </div>
+            <div className="elemento z-[100]">
+              <div>
 
-            </p> 
+                <div className="div-hover">¡Hola, soy un div</div>
+              </div>
+            </div>
+              </p> 
             </div> 
             </div>
             <button
