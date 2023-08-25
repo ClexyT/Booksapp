@@ -2,11 +2,11 @@ import instagram from "./instagram.svg"
 import github from "./github.svg"
 import twitter from "./twitter.svg"
 import linkedin from "./linkedin.svg"
-import logo from "./logo.svg"
+import info  from "./info.svg"
 export {
-    logo,
     instagram,
     github,
     twitter,
-    linkedin
+    linkedin,
+    info
 }
