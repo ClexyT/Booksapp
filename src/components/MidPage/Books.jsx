@@ -2,6 +2,8 @@ import PropTypes from 'prop-types'
 import jsonBooks from '../../mocks/books.json'
 import useSelectedBooks from '../../hooks/useSelectedBooks'
 import { useEffect } from 'react'
+import {info} from "../../../public/index"
+
 const Books = ({ filteredBooks }) => {
   const books = jsonBooks.library
   const savedBooks = JSON.parse(localStorage.getItem('addedBook')) || []
@@ -20,16 +22,13 @@ const Books = ({ filteredBooks }) => {
       <ul className='grid-container mt-12'>
         {filteredBooks.map((item) => (
           <li key={item.book.title}>
-           <div className='imagen-hover '><img  className='' src={item.book.cover} alt={`Portada de ${item.book.title}`} /></div> 
-          <div className="overlay">
-            {/* <p>Texto de superposición</p> */}
-          </div>
+           <div className='imagen-hover'><img  className='z-[10]' src={item.book.cover} alt={`Portada de ${item.book.title}`} /></div> 
             <p className='#'><span className='#'>{item.book.title}</span></p>
             <div className='group relative'> 
-            <img src="../../../public/info_FILL0_wght400_GRAD0_opsz48.svg" className='grid justify-items-end w-7 invert'></img> 
+            <img src={info} className='grid justify-items-end w-7 invert'></img> 
             <div className='absolute top-0 left-0 w-full h-0 bg-gray-800 opacity-0 group-hover:h-full group-hover:opacity-75 transition-all duration-300 '> 
-            <p className='text-white text-center mt-4'>{item.book.author.name}
-            <div className="elemento z-[100]">
+            <p className='text-white text-center mt-4 cursor-default'>Más Información
+            <div className="elemento z-[20]">
               <div>
 
                 <div className="div-hover">¡Hola, soy un div</div>
