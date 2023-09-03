@@ -22,23 +22,15 @@ const Books = ({ filteredBooks }) => {
       <ul className='grid-container mt-12'>
         {filteredBooks.map((item) => (
           <li key={item.book.title}>
-           <div className='imagen-hover'><img  className='z-[10]' src={item.book.cover} alt={`Portada de ${item.book.title}`} /></div> 
-            <p className='#'><span className='#'>{item.book.title}</span></p>
-            <div className='group relative'> 
-            <img src={info} className='grid justify-items-end w-7 invert'></img> 
-            <div className='absolute top-0 left-0 w-full h-0 bg-gray-800 opacity-0 group-hover:h-full group-hover:opacity-75 transition-all duration-300 '> 
-            <p className='text-white text-center mt-4 cursor-default'>Más Información
-            <div className="elemento z-[20]">
-              <div>
-
-                <div className="div-hover">¡Hola, soy un div</div>
-              </div>
+            <div className='hover:text-blue-300'>
+             <div className='imagen-hover'><img  className='z-[10]' src={item.book.cover} alt={`Portada de ${item.book.title}`} /></div> 
+              <p className=''><span className='cursor-default'>{item.book.title}</span></p>
             </div>
-              </p> 
-            </div> 
+            <div className='group relative'> 
+            
             </div>
             <button
-              className={`p-1 pr-2 mt-2 mb-0 rounded-r-lg font-bold ${
+              className={`p-1 pr-3 mt-3 mb-3 items-center rounded-r-lg font-bold  ${
                 selectedBooks.find((bookState) => bookState.id === item.book.ISBN)?.add
                   ? 'bg-red-700'
                   : 'bg-green-500'
