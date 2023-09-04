@@ -22,16 +22,15 @@ const Books = ({ filteredBooks }) => {
           <li key={item.book.title}>
             <img src={item.book.cover} alt={`Portada de ${item.book.title}`} />
             <p className='#'><span className='#'>{item.book.title}</span></p>
-            <div className='group relative'> 
-            <img src="../../../public/info_FILL0_wght400_GRAD0_opsz48.svg" className='grid justify-items-end w-7 invert'></img> 
-            <div className='absolute top-0 left-0 w-full h-0 bg-red-800 opacity-0 group-hover:h-full group-hover:group-hover:opacity-75 transition-all duration-300'> 
-            <p className='text-white text-center mt-4'>
-              Pages: {item.book.pages} <br/>
-              Genre: {item.book.genre} <br/>
-              Author: {item.book.author.name} <br/>
-
-              </p> 
-            </div> 
+            <div className='group relative'>
+              <img src='../../../public/info_FILL0_wght400_GRAD0_opsz48.svg' className='grid justify-items-end w-7 invert' />
+              <div className='absolute top-0 left-0 w-full h-0 bg-red-800 opacity-0 group-hover:h-full group-hover:group-hover:opacity-75 transition-all duration-300'>
+                <p className='text-white text-center mt-4'>
+                  Pages: {item.book.pages} <br />
+                  Genre: {item.book.genre} <br />
+                  Author: {item.book.author.name} <br />
+                </p>
+              </div>
             </div>
             {/* <img src="../../../public/info_FILL0_wght400_GRAD0_opsz48.svg " className='grid  justify-items-end w-7 invert'></img> */}
             {/* <p className='#'>Autor: <span className='#'>{item.book.author.name}</span></p> */}
