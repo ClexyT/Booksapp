@@ -22,12 +22,13 @@ const Books = ({ filteredBooks }) => {
       <ul className='grid-container mt-12'>
         {filteredBooks.map((item) => (
           <li key={item.book.title}>
+
             <div className='hover:text-blue-300'>
              <div className='imagen-hover'><img  className='z-[10]' src={item.book.cover} alt={`Portada de ${item.book.title}`} /></div> 
               <p className=''><span className='cursor-default'>{item.book.title}</span></p>
             </div>
             <div className='group relative'> 
-            
+
             </div>
             <button
               className={`p-1 pr-3 mt-3 mb-3 items-center rounded-r-lg font-bold  ${
